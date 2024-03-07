@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+
+
+    <div class="first">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Autem possimus explicabo id aperiam quos sint recusandae itaque pariatur, rerum vitae atque culpa velit, saepe sit enim error quia magni praesentium?
+    </div>
+
+    <hr>
+
+    <nav>
+        <a href="#">Főoldal</a>
+        <a href="#">Termékek</a>
+        <a href="#">Kosár</a>
+        <a href="#">Kapcsolat</a>  
+    </nav>
+
+    <hr>
+    
+    <div class="timing">
+
+    </div>
+
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quis adipisci voluptatum sunt corrupti numquam, obcaecati in dignissimos enim quas at quod modi ratione minima dolorum architecto reiciendis sequi placeat!</p>
+    <div id="magicdiv" class="magic">Magic</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste corporis nihil odio nesciunt. Dolorum inventore itaque assumenda accusantium fugiat, sequi, excepturi perspiciatis soluta, mollitia eveniet illum ratione nemo blanditiis!</p>
+
+    <script>
+        let divElement = document.querySelector("#magicdiv");
+        let htmlElement = document.querySelector(":root");
+
+        divElement.addEventListener("keydown", showHide);
+        htmlElement.addEventListener("click", showHide);
+
+        function showHide(){
+            divElement.classList.toggle("show");
+        }
+        
+    </script>
+</body>
+</html>
